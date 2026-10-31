@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>JARVIS AI</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h2>J.A.R.V.I.S.</h2>
+      <span>● ONLINE</span>
+    </header>
+
+    <section class="hero">
+      <div class="orb">J</div>
+      <h1>Good day. I'm JARVIS.</h1>
+      <p>Your personal AI assistant.</p>
+    </section>
+
+    <section class="chat">
+      <div id="messages">
+        <p class="assistant">JARVIS systems ready. How can I help?</p>
+      </div>
+
+      <form id="chatForm">
+        <button type="button" id="micBtn">🎙</button>
+        <input id="messageInput"
+          placeholder="Message JARVIS..." required>
+        <button type="submit">➤</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
