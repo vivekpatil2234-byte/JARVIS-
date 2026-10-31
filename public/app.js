@@ -97,6 +97,12 @@ if (SpeechRecognition) {
   };
 } else {
   micBtn.addEventListener("click", function() {
+    
     addMessage("Voice input is not supported in this browser.", "assistant");
+  });
+}
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch(() => {});
   });
 }
